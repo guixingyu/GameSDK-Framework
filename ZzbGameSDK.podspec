@@ -11,5 +11,5 @@ Pod::Spec.new do |s|
   s.source = { :git => 'https://github.com/guixingyu/GameSDK-Framework.git', :tag => s.version.to_s }
 
   s.ios.deployment_target    = '8.0'
-  s.ios.vendored_framework   = 'ios/ZzbGameSDK.embeddedframework/ZzbGameSDK.framework'
+  s.ios.vendored_framework   = 'ZzbGameSDK.framework'
 end
