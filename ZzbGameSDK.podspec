@@ -12,7 +12,7 @@ Pod::Spec.new do |s|
 
   s.ios.deployment_target    = '8.0'
   s.ios.vendored_framework   = [
-    'ZzbGameSDK.framework'
+    'ZzbGameSDK.framework',
     'webappexts/iphoneos/webappexts.framework',
     'extensions/fat/extensions.framework',
     'UTDID.framework'
