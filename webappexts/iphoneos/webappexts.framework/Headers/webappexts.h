@@ -12,4 +12,3 @@
 #import "WAWebViewController.h"
 #import "WANativeView.h"
 #import "WAModule.h"
-#include "symbols.h"

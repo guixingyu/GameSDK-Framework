@@ -14,23 +14,22 @@ Pod::Spec.new do |s|
   s.ios.vendored_framework   = [
     'ZzbGameSDK.framework',
     'webappexts/iphoneos/webappexts.framework',
-    'extensions/fat/extensions.framework',
-    'UTDID.framework'
+    'extensions/fat/extensions.framework'
   ]
 
   s.dependency 'ZBarSDK', '~> 1.3.1'
   s.dependency 'Reachability', '~> 3.0.0'
   s.dependency 'YYImage', '~> 1.0.0'
-  #s.dependency 'YBImageBrowser', '~> 3.0.0'
-  #s.dependency 'SDWebImage'
+  s.dependency 'YBImageBrowser', '~> 3.0.0'
+  s.dependency 'SDWebImage', "~> 5.0.0"
   s.dependency 'IDMPhotoBrowser', '~> 1.11.3'
   s.dependency 'SocketRocket', '~> 0.5.0'
-  s.dependency 'LBXScan/LBXNative','~> 2.3'
-  s.dependency 'Masonry', '~> 1.1.0'
-  s.dependency 'AFNetworking', '~> 3.0'
-  s.dependency 'JSONModel'
-  s.dependency 'MJRefresh', '~> 3.2.2'
-  s.dependency 'SDCycleScrollView','~> 1.80'
-  s.dependency 'Bytedance-UnionAD', '~> 2.5.1.5'
+  #s.dependency 'LBXScan/LBXNative','~> 2.3'
+  #s.dependency 'Masonry', '~> 1.1.0'
+  #s.dependency 'AFNetworking', '~> 3.0'
+  #s.dependency 'JSONModel'
+  #s.dependency 'MJRefresh', '~> 3.2.2'
+  #s.dependency 'SDCycleScrollView','~> 1.80'
+  #s.dependency 'Bytedance-UnionAD', '~> 2.5.1.5'
 
 end

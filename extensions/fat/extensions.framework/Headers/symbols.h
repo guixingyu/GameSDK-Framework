@@ -1,3 +1,3 @@
 #ifndef WAExtensions
-#define WAExtensions LCShamisenRepairsStitch
+#define WAExtensions IVRuralFeelingua
 #endif
