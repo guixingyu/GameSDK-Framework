@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name = "ZzbGameSDK"
-  s.version = "0.5.0"
+  s.version = "0.8.0"
   s.summary = "A short description of ZzbGameSDK."
   s.license = {"type"=>"MIT", "file"=>"LICENSE"}
   s.authors = {"guixingyu"=>"460734287@qq.com"}
@@ -11,6 +11,8 @@ Pod::Spec.new do |s|
   s.source = { :path => '.' }
 
   s.ios.deployment_target    = '8.0'
+
+  s.pod_target_xcconfig = {'OTHER_LDFLAGS' => '-ObjC'}
 
   s.ios.resource_bundles = {
     'ZzbGameSDK' => ['ZzbGameSDK/Resources/ZzbGameSDK.bundle']
@@ -23,6 +25,8 @@ Pod::Spec.new do |s|
     'UTDID.framework',
     'BUD-Frameworks/BUAdSDK.framework'
   ]
+
+  s.static_framework = true
 
   s.dependency 'ZBarSDK', '~> 1.3.1'
   s.dependency 'Reachability', '~> 3.0.0'
