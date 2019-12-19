@@ -1,7 +1,7 @@
 Pod::Spec.new do |s|
-  s.name = "ZzbPlatformSDK"
-  s.version = "1.0.3"
-  s.summary = "A short description of ZzbPlatformSDK."
+  s.name = "ZzbGameSDK"
+  s.version = "1.0.4"
+  s.summary = "A short description of ZzbGameSDK."
   s.license = {"type"=>"MIT", "file"=>"LICENSE"}
   s.authors = {"guixingyu"=>"460734287@qq.com"}
   s.homepage = "https://github.com/guixingyu/GameSDK-Framework"
@@ -15,12 +15,12 @@ Pod::Spec.new do |s|
   s.pod_target_xcconfig = {'OTHER_LDFLAGS' => '-ObjC'}
 
   s.ios.resource_bundles = {
-    'ZzbPlatformSDK' => ['ZzbGameSDK.bundle']
+    'ZzbGameSDK' => ['ZzbGameSDK.bundle']
   }
 
   s.ios.vendored_framework   = [
-    'ZzbPlatformSDK.framework',
-    #'webappexts/iphoneos/webappexts.framework',
+    'ZzbGameSDK.framework',
+    'webappexts/iphoneos/webappexts.framework',
     'extensions/fat/extensions.framework',
     'UTDID.framework'
   ]
