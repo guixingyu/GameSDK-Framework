@@ -15,11 +15,11 @@ Pod::Spec.new do |s|
   s.pod_target_xcconfig = {'OTHER_LDFLAGS' => '-ObjC'}
 
   s.ios.resource_bundles = {
-    'ZzbGameSDK' => ['ZzbGameSDK/ZzbGameSDK.bundle']
+    'ZzbGameSDK' => ['ZzbGameSDK.bundle']
   }
 
   s.ios.vendored_framework   = [
-    'ZzbGameSDK/ZzbGameSDK.framework',
+    'ZzbGameSDK.framework',
     'webappexts/iphoneos/webappexts.framework',
     'extensions/fat/extensions.framework',
     'UTDID.framework'
