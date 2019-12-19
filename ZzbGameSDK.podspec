@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name = "ZzbGameSDK"
-  s.version = "0.9.0"
+  s.version = "1.0.0"
   s.summary = "A short description of ZzbGameSDK."
   s.license = {"type"=>"MIT", "file"=>"LICENSE"}
   s.authors = {"guixingyu"=>"460734287@qq.com"}
@@ -15,15 +15,14 @@ Pod::Spec.new do |s|
   s.pod_target_xcconfig = {'OTHER_LDFLAGS' => '-ObjC'}
 
   s.ios.resource_bundles = {
-    'ZzbGameSDK' => ['ZzbGameSDK/Resources/ZzbGameSDK.bundle']
+    'ZzbGameSDK' => ['ZzbGameSDK/ZzbGameSDK.bundle']
   }
 
   s.ios.vendored_framework   = [
-    'ZzbGameSDK/ZzbGameSDK.framework',
+    'ZzbGameSDK/GameSDK.framework',
     'webappexts/iphoneos/webappexts.framework',
     'extensions/fat/extensions.framework',
-    'UTDID.framework',
-    'BUD-Frameworks/BUAdSDK.framework'
+    'UTDID.framework'
   ]
 
   s.static_framework = true
@@ -39,4 +38,5 @@ Pod::Spec.new do |s|
   s.dependency 'JSONModel'
   s.dependency 'MJRefresh', '~> 3.2.2'
   s.dependency 'SDCycleScrollView','~> 1.80'
+  s.dependency 'Bytedance-UnionAD', '~> 2.5.1.5'	
 end
