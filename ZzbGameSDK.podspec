@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name = "ZzbGameSDK"
-  s.version = "1.0.0"
+  s.version = "1.0.1"
   s.summary = "A short description of ZzbGameSDK."
   s.license = {"type"=>"MIT", "file"=>"LICENSE"}
   s.authors = {"guixingyu"=>"460734287@qq.com"}
@@ -19,7 +19,7 @@ Pod::Spec.new do |s|
   }
 
   s.ios.vendored_framework   = [
-    'ZzbGameSDK/GameSDK.framework',
+    'ZzbGameSDK/ZzbGameSDK.framework',
     'webappexts/iphoneos/webappexts.framework',
     'extensions/fat/extensions.framework',
     'UTDID.framework'
